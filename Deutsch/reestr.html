@@ -5,32 +5,6 @@
     <title>Реестрация</title>
     <link href="images/6-8.png" rel="shortcut icon" type="img/x-icon">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/style1.css">
-    <script>
-        function valid (form){
-            var fail = false;
-            var name = form.name.value;
-            var login = form.login.value;
-            var password = form.password.value;
-            var RePassword = form.RePassword.value;
-            var state = form.state.value;
-
-            if(name == "")
-                fail == "Вы не ввели свое имя";
-            else if(login == "" || login == " ")
-                fail = "Вы ввели свой логин";
-            else if(password == "")
-                fail = "Вы не ввели пароль";
-            else if(password != RePassword)
-                fail = "Пароли не совпадают";
-            else if(state == "")
-                fail = "Укажите пол";
-            if(fail)
-                alert(fail);
-            else
-                alert('Вы успешно зарегестрированы');            
-        }
-    </script>
 </head>
 <body>
     <div class="flex-box-conteiner">
@@ -87,6 +61,31 @@
         <div class="footer">
             <span class="left">Все права защищены &copy; 2018</span>
             <a href="https://www.facebook.com/%D0%9C%D0%BE%D0%B9-%D0%BD%D0%B5%D0%BC%D0%B5%D1%86%D0%BA%D0%B8%D0%B9Mein-Deutsch-249277012365769/"><span class="right">Coц. группа <img src="images/face.png"></span></a>
-        </div>
-</body>
+        </div> 
+        <script>
+            function valid (form){
+                var fail = false;
+                var name = form.name.value;
+                var login = form.login.value;
+                var password = form.password.value;
+                var RePassword = form.RePassword.value;
+                var state = form.state.value;
+
+                if(name == "")
+                    fail == "Вы не ввели свое имя";
+                else if(login == "" || login == " ")
+                    fail = "Вы ввели свой логин";
+                else if(password == "")
+                    fail = "Вы не ввели пароль";
+                else if(password != RePassword)
+                    fail = "Пароли не совпадают";
+                else if(state == "")
+                    fail = "Укажите пол";
+                if(fail)
+                    alert(fail);
+                else
+                    alert('Вы успешно зарегестрированы. Но это тестовая функция (как и вход).');            
+            }
+    </script>
+</body>  
 </html>
